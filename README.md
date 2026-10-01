@@ -88,4 +88,4 @@ It is not intended to represent any specific customer implementation or prescrib
 
 ## Status
 
-🚧 Work in progress
+v1.0 — Initial public reference

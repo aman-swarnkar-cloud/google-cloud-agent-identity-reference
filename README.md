@@ -85,7 +85,3 @@ This keeps the trust model explicit and makes least privilege, governance, and a
 This is a generic technical reference based on publicly available Google Cloud capabilities and general security principles.
 
 It is not intended to represent any specific customer implementation or prescribe a single architecture for every enterprise environment.
-
-## Status
-
-v1.0 — Initial public reference

@@ -46,6 +46,12 @@ Three conceptual patterns covering:
 2. user-delegated access,
 3. governed access through Agent Gateway.
 
+### Review an agent identity design
+
+[`docs/identity-review-checklist.md`](docs/identity-review-checklist.md)
+
+A practical checklist for reviewing user identity separation, Agent Identity permissions, delegated authority, governed destination access, policy enforcement, and auditability.
+
 ## Implementation examples
 
 ### Grant IAM access to an Agent Identity

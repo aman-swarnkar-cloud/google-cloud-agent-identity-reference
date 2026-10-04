@@ -88,6 +88,7 @@ flowchart LR
 
     INT --> S4[4. Perform user-specific action]
     S4 -->|User-delegated authority| EXT2[External Service]
+'''
 
 ## My design principle
 

@@ -46,6 +46,8 @@ Three conceptual patterns covering:
 2. user-delegated access,
 3. governed access through Agent Gateway.
 
+It also includes a composite workflow example showing how the same agent can use Agent Identity for some downstream operations and user-delegated authority for others.
+
 ### Review an agent identity design
 
 [`docs/identity-review-checklist.md`](docs/identity-review-checklist.md)

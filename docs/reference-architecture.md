@@ -65,6 +65,29 @@ flowchart LR
 In this pattern, Agent Gateway acts as the enforcement point for governed agent communication.
 
 The agent's identity can be evaluated against policies before access to registered tools, MCP servers, endpoints, or other agents is allowed.
+---
+
+## Composite example — one workflow using both authority models
+
+A single agent workflow does not need to use the same authority model for every downstream operation.
+
+The appropriate authority should be selected based on what each target system needs to trust.
+
+```mermaid
+flowchart LR
+    U[User] --> AR[Agent Runtime]
+
+    AR --> S1[1. Read configuration]
+    S1 -->|Agent Identity| GCR[Google Cloud Resource]
+
+    GCR --> S2[2. Retrieve user-specific data]
+    S2 -->|User-delegated authority| EXT1[External Service]
+
+    EXT1 --> S3[3. Invoke internal processing]
+    S3 -->|Agent Identity| INT[Internal / Google Cloud Service]
+
+    INT --> S4[4. Perform user-specific action]
+    S4 -->|User-delegated authority| EXT2[External Service]
 
 ## My design principle
 

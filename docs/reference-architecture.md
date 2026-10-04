@@ -89,7 +89,28 @@ flowchart LR
     INT --> S4[4. Perform user-specific action]
     S4 -->|User-delegated authority| EXT2[External Service]
 ```
+In this example, the same agent uses different authority models within one workflow:
 
+1. **Read configuration — Agent Identity**  
+   The resource trusts the agent itself.
+
+2. **Retrieve user-specific data — user-delegated authority**  
+   The external system must honor the permissions granted by the specific user.
+
+3. **Invoke internal processing — Agent Identity**  
+   The processing service authorizes the agent as its own principal.
+
+4. **Perform a user-specific external action — user-delegated authority**  
+   The target operation must execute within the authority granted by the user.
+
+The important point is that a mixed workflow is **not a separate identity type**.
+
+It is a composition of the two authority models:
+
+- **Agent Identity** when the downstream resource should trust the agent.
+- **User-delegated authority** when the downstream resource must honor a specific user's permissions.
+
+This is why I prefer selecting authority **per downstream operation**, rather than assigning one authorization model to the entire agent workflow.
 
 ## My design principle
 

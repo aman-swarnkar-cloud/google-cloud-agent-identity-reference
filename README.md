@@ -1,3 +1,5 @@
+[![M8ven Score](https://m8ven.ai/badge/mcp/aman-swarnkar-cloud/google-cloud-agent-identity-reference)](https://m8ven.ai/mcp/aman-swarnkar-cloud/google-cloud-agent-identity-reference?s=readme)
+
 # Google Cloud Agent Identity Reference
 
 A practical reference for separating **user identity**, **delegated user authority**, and **Agent Identity** in enterprise Agentic AI solutions built on Google Cloud and the Gemini Enterprise Agent Platform.
